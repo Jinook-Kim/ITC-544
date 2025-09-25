@@ -1,3 +1,7 @@
 # Network Design
 
-## Logical & Physical Diagrams
+## Logical Diagram
+![Logical Diagram](Logical.png)
+
+## Physical Diagram
+![Physical Diagram](Physical.png)
