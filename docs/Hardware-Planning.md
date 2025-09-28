@@ -62,8 +62,8 @@
 ---
 
 ## 6. Network Devices
-- **Switches:** 1 × Managed/Unmanaged switch  
-- **Routers:** OPNsense (VM-based or physical)  
+- **Switches:** 1 × Managed switch  
+- **Routers:** OPNsense (Proxmox)  
 
 ---
 
