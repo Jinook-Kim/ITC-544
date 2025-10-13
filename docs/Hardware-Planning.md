@@ -37,7 +37,7 @@
 - **Web Server (Ubuntu Apache)** – 1 vCPU | 2 GB RAM | 40 GB storage  
 - **File Server (TrueNAS)** – 2 vCPUs | 8 GB RAM | 250 GB storage  
 - **VPN Server (Ubuntu OpenVPN)** – 1 vCPU | 1 GB RAM | 20 GB storage  
-- **SIEM / IDS-IPS (Ubuntu Wazuh)** – 4 vCPUs | 8 GB RAM | 120 GB storage  
+- **SIEM / IDS-IPS (Kali Purple Wazuh)** – 4 vCPUs | 8 GB RAM | 120 GB storage  
 - **Metrics Server (Ubuntu Graphite)** – 1 vCPU | 2 GB RAM | 30 GB storage  
 - **Backup & Restore (Debian Duplicati)** – 1 vCPU | 1 GB RAM | 50 GB storage  
 
