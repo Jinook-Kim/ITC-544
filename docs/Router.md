@@ -1,4 +1,4 @@
-## Router (20 Points)
+## Router
 
 ### Role
 
