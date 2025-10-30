@@ -60,7 +60,7 @@ This document lists all hosts in the environment, including hostnames, IP addres
 | WIN-WS-04       | DHCP       | 214  | Windows 11 Client | tested |
 | WIN-WS-05       | DHCP       | 214  | Windows 11 Client | tested |
 | DEBIAN-WS       | DHCP       | 214  | Debian Desktop    | tested |
-| ADMIN-WS-UBUNTU | DHCP       | 214  | Debian Desktop    | tested |
+| ADMIN-WS-UBUNTU | DHCP       | 214  | Ubuntu Desktop    | tested |
 
 ![Workstations DHCP](assets/ws-dhcp.png)
 
