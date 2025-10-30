@@ -8,11 +8,10 @@ This document lists all hosts in the environment, including hostnames, IP addres
 
 **Description:** Housing all core administrative infrastructure.
 
-| Hostname        | IP Address | VLAN | Role                               | Status  |
-| --------------- | ---------- | ---- | ---------------------------------- | ------- |
-| AD-PRIMARY      | 10.0.10.10 | 210  | Windows Server 2022 (Primary AD)   | Planned |
-| AD-BACKUP       | 10.0.10.11 | 210  | Windows Server 2022 (Backup AD)    | Planned |
-| ADMIN-WS-UBUNTU | 10.0.10.20 | 210  | Ubuntu Desktop (Admin Workstation) | Planned |
+| Hostname   | IP Address | VLAN | Role                             | Status    |
+| ---------- | ---------- | ---- | -------------------------------- | --------- |
+| AD-PRIMARY | 10.0.10.10 | 210  | Windows Server 2022 (Primary AD) | installed |
+| AD-BACKUP  | 10.0.10.11 | 210  | Windows Server 2022 (Backup AD)  | installed |
 
 ---
 
@@ -20,10 +19,10 @@ This document lists all hosts in the environment, including hostnames, IP addres
 
 **Description:** Dedicated zone for monitoring, threat detection, and security analysis.
 
-| Hostname    | IP Address | VLAN | Role                          | Status  |
-| ----------- | ---------- | ---- | ----------------------------- | ------- |
-| WAZUH-SIEM  | 10.0.20.10 | 211  | IDS/IPS/SIEM                  | Planned |
-| KALI-PURPLE | 10.0.20.15 | 211  | Security Analysis Workstation | Planned |
+| Hostname    | IP Address | VLAN | Role                          | Status    |
+| ----------- | ---------- | ---- | ----------------------------- | --------- |
+| WAZUH-SIEM  | 10.0.20.10 | 211  | IDS/IPS/SIEM                  | installed |
+| KALI-PURPLE | 10.0.20.11 | 211  | Security Analysis Workstation | installed |
 
 ---
 
@@ -31,10 +30,9 @@ This document lists all hosts in the environment, including hostnames, IP addres
 
 **Description:** Backend services and applications that are not administrative or public-facing.
 
-| Hostname   | IP Address | VLAN | Role                  | Status  |
-| ---------- | ---------- | ---- | --------------------- | ------- |
-| MYSQL-DB   | 10.0.30.10 | 212  | MySQL Database        | Planned |
-| TRUENAS-FS | 10.0.30.20 | 212  | File Server (SMB/NFS) | Planned |
+| Hostname | IP Address | VLAN | Role           | Status    |
+| -------- | ---------- | ---- | -------------- | --------- |
+| MYSQL-DB | 10.0.30.10 | 212  | MySQL Database | installed |
 
 ---
 
@@ -42,9 +40,11 @@ This document lists all hosts in the environment, including hostnames, IP addres
 
 **Description:** DMZ for public-facing web services.
 
-| Hostname   | IP Address | VLAN | Role              | Status  |
-| ---------- | ---------- | ---- | ----------------- | ------- |
-| APACHE-WEB | 10.0.40.10 | 213  | Apache Web Server | Planned |
+| Hostname   | IP Address | VLAN | Role              | Status |
+| ---------- | ---------- | ---- | ----------------- | ------ |
+| APACHE-WEB | 10.0.40.10 | 213  | Apache Web Server | tested |
+
+![Web server](assets/web-server.png)
 
 ---
 
@@ -52,14 +52,17 @@ This document lists all hosts in the environment, including hostnames, IP addres
 
 **Description:** Standard user devices.
 
-| Hostname  | IP Address | VLAN | Role              | Status  |
-| --------- | ---------- | ---- | ----------------- | ------- |
-| WIN-WS-01 | 10.0.50.10 | 214  | Windows 10 Client | Planned |
-| WIN-WS-02 | 10.0.50.11 | 214  | Windows 10 Client | Planned |
-| WIN-WS-03 | 10.0.50.12 | 214  | Windows 11 Client | Planned |
-| WIN-WS-04 | 10.0.50.13 | 214  | Windows 11 Client | Planned |
-| WIN-WS-05 | 10.0.50.14 | 214  | Windows 10 Client | Planned |
-| DEBIAN-WS | 10.0.50.20 | 214  | Debian Desktop    | Planned |
+| Hostname        | IP Address | VLAN | Role              | Status |
+| --------------- | ---------- | ---- | ----------------- | ------ |
+| WIN-WS-01       | DHCP       | 214  | Windows 11 Client | tested |
+| WIN-WS-02       | DHCP       | 214  | Windows 11 Client | tested |
+| WIN-WS-03       | DHCP       | 214  | Windows 11 Client | tested |
+| WIN-WS-04       | DHCP       | 214  | Windows 11 Client | tested |
+| WIN-WS-05       | DHCP       | 214  | Windows 11 Client | tested |
+| DEBIAN-WS       | DHCP       | 214  | Debian Desktop    | tested |
+| ADMIN-WS-UBUNTU | DHCP       | 214  | Debian Desktop    | tested |
+
+![Workstations DHCP](assets/ws-dhcp.png)
 
 ---
 
@@ -67,10 +70,13 @@ This document lists all hosts in the environment, including hostnames, IP addres
 
 **Description:** Remote users connecting to the network via OpenVPN.
 
-| Hostname   | IP Address | VLAN | Role    | Status         |
-| ---------- | ---------- | ---- | ------- | -------------- |
-| DNS-SERVER | 10.0.60.10 | 215  | DNS     | VM Provisioned |
-| OPENVPN    | 10.0.60.11 | 215  | OpenVPN | VM Provisioned |
+| Hostname       | IP Address | VLAN | Role    | Status    |
+| -------------- | ---------- | ---- | ------- | --------- |
+| DNS-SERVER     | 10.0.60.10 | 215  | DNS     | installed |
+| OPENVPN-SERVER | 10.0.60.11 | 215  | OpenVPN | installed |
+
+![DNS-server](assets/dns-server.png)
+![OpenVPN-server](assets/openvpn-server.png)
 
 ---
 
@@ -78,14 +84,8 @@ This document lists all hosts in the environment, including hostnames, IP addres
 
 **Description:** Dedicated backup zone.
 
-| Hostname  | IP Address | VLAN | Role          | Status  |
-| --------- | ---------- | ---- | ------------- | ------- |
-| DUPLICATI | 10.0.70.10 | 216  | Backup Server | Planned |
+| Hostname  | IP Address | VLAN | Role          | Status    |
+| --------- | ---------- | ---- | ------------- | --------- |
+| DUPLICATI | 10.0.70.10 | 216  | Backup Server | installed |
 
 ---
-
-# Notes
-
-- IPs shown are representative and may be adjusted during deployment.
-- Status “Active” assumes hosts are in production. Testing or planned hosts should be marked as “Planned” or “Deployed.”
-- This inventory should be updated quarterly or whenever hosts are added/retired.
