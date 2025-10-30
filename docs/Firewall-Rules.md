@@ -61,4 +61,4 @@ Firewall rules follow the principle of **least privilege**, allowing only the tr
 - **Logging** – All firewall decisions are logged and forwarded to **Wazuh (211)** for auditing.  
 - **Monitoring** – Security VLAN (211) receives logs and alerts from all VLANs.  
 
-
+### DOCUMENT ALL RULES CREATED (I SAY WE ADD SCREENSHOTS)
