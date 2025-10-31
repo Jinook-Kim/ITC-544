@@ -13,6 +13,9 @@ This document lists all hosts in the environment, including hostnames, IP addres
 | AD-PRIMARY | 10.0.10.10 | 210  | Windows Server 2022 (Primary AD) | installed |
 | AD-BACKUP  | 10.0.10.11 | 210  | Windows Server 2022 (Backup AD)  | installed |
 
+![ad-primary](assets/ad-primary.png)
+![ad-backup](assets/ad-backup.png)
+
 ---
 
 ## VLAN 211 – Security (10.0.20.0/24)
