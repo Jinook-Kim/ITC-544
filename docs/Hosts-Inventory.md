@@ -19,10 +19,11 @@ This document lists all hosts in the environment, including hostnames, IP addres
 
 **Description:** Dedicated zone for monitoring, threat detection, and security analysis.
 
-| Hostname    | IP Address | VLAN | Role                          | Status    |
-| ----------- | ---------- | ---- | ----------------------------- | --------- |
-| WAZUH-SIEM  | 10.0.20.10 | 211  | IDS/IPS/SIEM                  | installed |
-| KALI-PURPLE | 10.0.20.11 | 211  | Security Analysis Workstation | installed |
+| Hostname   | IP Address | VLAN | Role         | Status    |
+| ---------- | ---------- | ---- | ------------ | --------- |
+| WAZUH-SIEM | 10.0.20.10 | 211  | IDS/IPS/SIEM | installed |
+
+![WAZUH](assets/wazuh.png)
 
 ---
 
@@ -33,6 +34,8 @@ This document lists all hosts in the environment, including hostnames, IP addres
 | Hostname | IP Address | VLAN | Role           | Status    |
 | -------- | ---------- | ---- | -------------- | --------- |
 | MYSQL-DB | 10.0.30.10 | 212  | MySQL Database | installed |
+
+![MySQL Server](assets/sql-server.png)
 
 ---
 
@@ -77,15 +80,5 @@ This document lists all hosts in the environment, including hostnames, IP addres
 
 ![DNS-server](assets/dns-server.png)
 ![OpenVPN-server](assets/openvpn-server.png)
-
----
-
-## VLAN 216 – Backup Server (10.0.70.0/24)
-
-**Description:** Dedicated backup zone.
-
-| Hostname  | IP Address | VLAN | Role          | Status    |
-| --------- | ---------- | ---- | ------------- | --------- |
-| DUPLICATI | 10.0.70.10 | 216  | Backup Server | installed |
 
 ---
