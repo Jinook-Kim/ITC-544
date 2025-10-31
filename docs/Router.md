@@ -47,3 +47,4 @@ default            172.16.40.1     UGS       vtnet0
 
 ### ADD CONNECTIVITY TEST EVIDENCE
 
+Screenshot of Workstation pinging to Gateway and Google.
