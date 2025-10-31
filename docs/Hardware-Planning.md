@@ -112,3 +112,35 @@ Cables **C1** and **C2** were bonded for **LACP** to enable link aggregation bet
 | MySqlServer       | 60 GB             | 4 GB | 2 CPU | 
 | MetricsServer       | 32 GB              | 4 GB | 2 CPU |
 | SIEM       | 120 GB             | 8 GB | 4 CPU |
+
+---
+
+## 10. Proxmox Pool Strategy
+
+### Objective
+To group related VMs under logical pools for better access control and organization.
+
+| Pool Name     | Description                | VMs Assigned       |
+|----------------|----------------------------|--------------------|
+| `application` | Contains all web app related services   | MysqlServer, WebServer       |
+| `security`    | VMs related to auth, monitoring, security   | SIEM, AD, AD Backup, MetricsServer       |
+| `network`  | Network related VMs        | Router, DNS, OpenVPN       |
+
+---
+
+## 11. VM Tagging Summary
+
+| VM ID | Description      | Tags                                | Purpose / Role                        |
+|-------|------------------|-------------------------------------|---------------------------------------|
+| 100   | Router           | `core`, `network`, `router`         | Core network routing for the lab      |
+| 101   | DNS              | `dns`, `network`                    | Handles internal DNS resolution       |
+| 102   | SIEM             | `monitoring`, `security`, `siem`    | Security event monitoring system      |
+| 103   | AD               | `ad`, `auth`                        | Active Directory domain controller    |
+| 104   | AD-BACKUP        | `ad`, `backup`                      | Backup domain controller              |
+| 105   | WebServer        | `app`, `frontend`, `web`            | Hosts lab web application             |
+| 106   | OpenVPN          | `access`, `network`, `vpn`          | Provides VPN access to the network    |
+| 107   | MYSQLServer      | `app`, `database`, `mysql`          | Backend database server               |
+| 108   | MetricsServer    | `metrics`, `monitoring`             | Collects and reports system metrics   |
+
+
+
