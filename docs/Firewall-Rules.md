@@ -50,7 +50,9 @@ Firewall rules follow the principle of **least privilege**, allowing only the tr
 - Allow **Workstations (214) → Admin/Management (210)** for DNS/AD (TCP/UDP 53, TCP/UDP 389, TCP 445, TCP 3389).  
 - Allow **Workstations (214) → Servers (212)** for file sharing (SMB) and databases.  
 - Allow **Workstations (214) → Web Server (213)** for internal web pages.  
-- Deny **all other inter-VLAN traffic** by default.  
+- Deny **all other inter-VLAN traffic** by default.
+<img width="518" height="267" alt="image" src="https://github.com/user-attachments/assets/4018ad60-56c5-4aee-9a04-3eeef7f2edfc" />
+
 
 ---
 
