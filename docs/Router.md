@@ -54,7 +54,6 @@ Screenshot of Workstation pinging to Gateway and Google.
 Admin Rules
 ![Admin Rules](./assets/Admin%20Rules.png)
 Database
-![Database Rules](./assets/Database%20Rules.png)
-Networking 
+![Database Rules](./assets/Database%20Rules.png) 
 Security
 ![Security Rules](./assets/Security%20Rules.png)
