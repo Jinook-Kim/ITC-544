@@ -12,7 +12,9 @@ Firewall rules follow the principle of **least privilege**, allowing only the tr
 ### VLAN 210 – Admin/Management (10.0.10.0/24)
 **Hosts/Services**: Windows Server 2022 (Primary AD, Backup AD), Ubuntu Admin Workstation  
 - Allow **Admin/Management (210) → Servers (212), Workstations (214), Security (211), and Web Server (213)** on management ports (e.g., SSH, RDP, WinRM, AD/DNS).  
-- Deny **all inbound traffic** from other VLANs.  
+- Deny **all inbound traffic** from other VLANs.
+<img width="512" height="276" alt="image" src="https://github.com/user-attachments/assets/1bf37786-f48f-4a2a-9b89-e797613ab6dc" />
+
 
 ---
 
