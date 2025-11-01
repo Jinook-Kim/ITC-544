@@ -71,6 +71,3 @@ Firewall rules follow the principle of **least privilege**, allowing only the tr
 - **Monitoring** – Security VLAN (211) receives logs and alerts from all VLANs.
 - **DNS** – All internal VLANS --> DNS server (In this case ANY because we don't have our internal DNS server configured)
 <img width="521" height="218" alt="image" src="https://github.com/user-attachments/assets/2e9ee374-7ca5-43d2-b39e-cd884b685bec" />
-
-
-### DOCUMENT ALL RULES CREATED (I SAY WE ADD SCREENSHOTS)
