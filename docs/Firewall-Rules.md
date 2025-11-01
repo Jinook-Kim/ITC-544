@@ -22,7 +22,9 @@ Firewall rules follow the principle of **least privilege**, allowing only the tr
 **Hosts/Services**: Wazuh IDS/IPS/SIEM, Kali Purple  
 - Allow **all other VLANs → Security (211)** for log forwarding.  
 - Allow **Admin/Management (210) → Security (211)** for administration (e.g., SSH, web console).  
-- Deny **all other traffic**.  
+- Deny **all other traffic**.
+<img width="518" height="216" alt="image" src="https://github.com/user-attachments/assets/2ac7544d-bf2d-4c7d-b6d4-5b61aa8f6908" />
+
 
 ---
 
