@@ -65,9 +65,11 @@ Firewall rules follow the principle of **least privilege**, allowing only the tr
 
 ---
 
-## Global Rules
-- **Default Deny** – Any traffic not explicitly allowed is blocked.  
+## Floating Rules 
 - **Logging** – All firewall decisions are logged and forwarded to **Wazuh (211)** for auditing.  
-- **Monitoring** – Security VLAN (211) receives logs and alerts from all VLANs.  
+- **Monitoring** – Security VLAN (211) receives logs and alerts from all VLANs.
+- **DNS** – Security VLAN (211) receives logs and alerts from all VLANs.
+<img width="521" height="218" alt="image" src="https://github.com/user-attachments/assets/2e9ee374-7ca5-43d2-b39e-cd884b685bec" />
+
 
 ### DOCUMENT ALL RULES CREATED (I SAY WE ADD SCREENSHOTS)
