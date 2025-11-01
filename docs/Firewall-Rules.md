@@ -68,7 +68,7 @@ Firewall rules follow the principle of **least privilege**, allowing only the tr
 ## Floating Rules 
 - **Logging** – All firewall decisions are logged and forwarded to **Wazuh (211)** for auditing.  
 - **Monitoring** – Security VLAN (211) receives logs and alerts from all VLANs.
-- **DNS** – Security VLAN (211) receives logs and alerts from all VLANs.
+- **DNS** – All internal VLANS --> DNS server (In this case ANY because we don't have our internal DNS server configured)
 <img width="521" height="218" alt="image" src="https://github.com/user-attachments/assets/2e9ee374-7ca5-43d2-b39e-cd884b685bec" />
 
 
