@@ -49,6 +49,7 @@ Firewall rules follow the principle of **least privilege**, allowing only the tr
 
 ### VLAN 214 – Workstations (10.0.50.0/24)
 **Hosts/Services**: Windows Clients (5x), Debian Desktop  
+- Allow **Workstations (214) → Web_Ports (80, 443)** for internet access
 - Allow **Workstations (214) → Admin/Management (210)** for DNS/AD (TCP/UDP 53, TCP/UDP 389, TCP 445, TCP 3389).  
 - Allow **Workstations (214) → Servers (212)** for file sharing (SMB) and databases.  
 - Allow **Workstations (214) → Web Server (213)** for internal web pages.  
