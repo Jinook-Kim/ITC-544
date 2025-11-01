@@ -28,11 +28,13 @@ Firewall rules follow the principle of **least privilege**, allowing only the tr
 
 ---
 
-### VLAN 212 – Servers (10.0.30.0/24)
+### VLAN 212 – Databse (10.0.30.0/24)
 **Hosts/Services**: MySQL Database, TrueNAS File Server  
 - Allow **Workstations (214) → Servers (212)** for services such as SMB (TCP 445) and MySQL (TCP 3306).  
 - Allow **Web Server (213) → Servers (212)** for database access (MySQL only).  
-- Deny **all other traffic**.  
+- Deny **all other traffic**.
+<img width="515" height="212" alt="image" src="https://github.com/user-attachments/assets/2e985843-347d-4012-8e68-89f41400fd9e" />
+
 
 ---
 
@@ -53,7 +55,7 @@ Firewall rules follow the principle of **least privilege**, allowing only the tr
 
 ---
 
-### VLAN 215 – VPN (10.0.60.0/24)
+### VLAN 215 – Networking (10.0.60.0/24)
 **Hosts/Services**: OpenVPN clients, OPNsense Router, DNS, DHCP  
 - Allow **VPN (215) → Admin/Management (210), Servers (212), and Workstations (214)** on necessary ports (RDP, SMB, SSH, etc.).  
 - Deny **all other traffic**.  
