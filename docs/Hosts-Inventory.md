@@ -10,8 +10,8 @@ This document lists all hosts in the environment, including hostnames, IP addres
 
 | Hostname   | IP Address | VLAN | Role                             | Local Backup Admin Account | Status    |
 | ---------- | ---------- | ---- | -------------------------------- | -------------------------- | --------- |
-| AD-PRIMARY | 10.0.10.10 | 210  | Windows Server 2022 (Primary AD) | Yes                        | installed |
-| AD-BACKUP  | 10.0.10.11 | 210  | Windows Server 2022 (Backup AD)  | Yes                        | installed |
+| AD-PRIMARY | 10.0.10.11 | 210  | Windows Server 2022 (Primary AD) | Yes                        | installed |
+| AD-BACKUP  | 10.0.10.21 | 210  | Windows Server 2022 (Backup AD)  | Yes                        | installed |
 
 ![ad-primary](assets/ad-primary.png)
 ![ad-backup](assets/ad-backup.png)
