@@ -52,7 +52,7 @@ Screenshot of Workstation pinging to Gateway and Google.
 
 
 Admin Rules
-![Admin Rules](./assets/"Admin Rules.png")
+![Admin Rules](./assets/Admin%20Rules.png)
 BackupServer
 Database
 <img width="541" height="221" alt="Database Rules" src="https://github.com/user-attachments/assets/16eba1d5-06fa-4989-a174-c62c092a4650" />
