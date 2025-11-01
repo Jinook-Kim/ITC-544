@@ -41,7 +41,7 @@ Firewall rules follow the principle of **least privilege**, allowing only the tr
 **Hosts/Services**: Apache Web Server (DMZ)  
 - Allow **WAN → Web Server (213)** on TCP 80/443 only.  
 - Allow **Admin/Management (210) → Web Server (213)** on management ports (SSH, RDP if applicable).  
-- Deny **any outbound traffic** from Web Server (213) to internal VLANs.
+- Deny all inbound traffic from other VLANs.
 <img width="514" height="219" alt="image" src="https://github.com/user-attachments/assets/5048aa93-7cc7-403c-b0b1-651edc105a86" />
 
 
