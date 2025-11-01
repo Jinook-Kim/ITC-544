@@ -49,3 +49,12 @@ default            172.16.40.1     UGS       vtnet0
 
 Screenshot of Workstation pinging to Gateway and Google.
 ![Web Server Ping Test](./assets/WS%20ping.png)
+
+
+Admin Rules
+![Admin Rules](./assets/Admin%20Rules.png)
+Database
+![Database Rules](./assets/Database%20Rules.png) 
+Security
+
+![Security Rules](./assets/Security%20Rules.png)
