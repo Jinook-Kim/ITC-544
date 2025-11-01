@@ -56,4 +56,5 @@ Admin Rules
 Database
 ![Database Rules](./assets/Database%20Rules.png) 
 Security
+
 ![Security Rules](./assets/Security%20Rules.png)
