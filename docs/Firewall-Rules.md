@@ -11,8 +11,11 @@ Firewall rules follow the principle of **least privilege**, allowing only the tr
 
 ### VLAN 210 – Admin/Management (10.0.10.0/24)
 **Hosts/Services**: Windows Server 2022 (Primary AD, Backup AD), Ubuntu Admin Workstation  
-- Allow **Admin/Management (210) → Servers (212), Workstations (214), Security (211), and Web Server (213)** on management ports (e.g., SSH, RDP, WinRM, AD/DNS).  
-- Deny **all inbound traffic** from other VLANs.
+- The Admin/Management VLAN provides privileged access for system administration. Outbound traffic is restricted to essential management services across other VLANs, including SSH, RDP, SMB, MySQL, and web management ports. The VLAN is permitted to access Servers (212), Workstations (214), Security (211), and the Web Server (213) only on approved management ports. All other lateral movement is blocked, and an explicit deny rule prevents any inbound traffic from other internal VLANs. 
+
+Changes RUles:
+- Allow DNS to Networking net (53 TCP/UDP)
+- Purpose: Allows Admin VLAN to query DNS servers in the Networking VLAN.
 <img width="512" height="276" alt="image" src="https://github.com/user-attachments/assets/1bf37786-f48f-4a2a-9b89-e797613ab6dc" />
 
 
