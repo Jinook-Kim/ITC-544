@@ -13,7 +13,7 @@ Firewall rules follow the principle of **least privilege**, allowing only the tr
 **Hosts/Services**: Windows Server 2022 (Primary AD, Backup AD), Ubuntu Admin Workstation  
 - The Admin/Management VLAN provides privileged access for system administration. Outbound traffic is restricted to essential management services across other VLANs, including SSH, RDP, SMB, MySQL, and web management ports. The VLAN is permitted to access Servers (212), Workstations (214), Security (211), and the Web Server (213) only on approved management ports. All other lateral movement is blocked, and an explicit deny rule prevents any inbound traffic from other internal VLANs. 
 
-**Changed Rules**:
+**Updated**:
 
 Allow DNS to Networking net (53 TCP/UDP)
 - Purpose: Allows Admin VLAN to query DNS servers in the Networking VLAN.
@@ -81,7 +81,7 @@ NO CHANGES HAVE BEEN MADE TO THESE RULES
 - Allow **VPN (215) → Admin/Management (210), Servers (212), and Workstations (214)** on necessary ports (RDP, SMB, SSH, etc.).  
 - Deny **all other traffic**.
 
-Changed Rules:
+Updated Rules:
 
 Allow DNS to External Resolvers
 - Allows devices in this VLAN to reach Google and Cloudflare DNS servers.
@@ -107,7 +107,34 @@ Send Logs to Security Server (Wazuh)
 ---
 
 ## Floating Rules 
-- **Logging** – All firewall decisions are logged and forwarded to **Wazuh (211)** for auditing.  
-- **Monitoring** – Security VLAN (211) receives logs and alerts from all VLANs.
-- **DNS** – All internal VLANS --> DNS server (In this case ANY because we don't have our internal DNS server configured)
-<img width="521" height="218" alt="image" src="https://github.com/user-attachments/assets/2e9ee374-7ca5-43d2-b39e-cd884b685bec" />
+Updated Rules:
+
+Allow DNS from All VLANs → BIND9 DNS adn AD
+
+Allow Logs to Security (Wazuh)
+- All VLANs can still send logs to Wazuh
+
+Allow NTP (Time Sync)
+- All VLANs can sync time with internal NTP server
+
+Allow Kerberos (Port 88)
+- Required for all Windows domain logons
+- Required for AD-integrated services
+- Required for LDAP bind with Kerberos
+
+Allow RPC Endpoint Mapper (135)
+- Group Policy processing
+- AD management tools
+
+Allow LDAP (389)
+- AD authentication
+- Domain join
+
+Allow Global Catalog LDAP (3268)
+- Universal group lookups
+
+Allow SMB to Domain Controllers (445)
+
+
+<img width="1039" height="500" alt="image" src="https://github.com/user-attachments/assets/9629a2b2-ae63-4f65-bae3-91047c271271" />
+
