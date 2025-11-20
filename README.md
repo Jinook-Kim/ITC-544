@@ -12,6 +12,7 @@ This write-up provides an overview and detailed documentation of our team’s ne
 | [DNS](docs/DNS.md)                                           | Documents DNS server configuration, zone and record management, and resolution testing procedures.                         |
 | [DHCP](docs/DHCP.md)                                         | Contains DHCP scope definitions, reservation lists, and static IP assignments.                                             |
 | [Group Policies](docs/Group-Policies.md)                     | Lists applied policies per user and device group, with step-by-step guides for creating and modifying GPOs.                |
+| [Users and Groups](docs/Users-And-Groups.md)                 | Lists all users, their roles, work types, and department group memberships within Active Directory.                        |
 | [Firewall](docs/Firewall-Rules.md)                           | Includes current firewall rules, justifications for each rule, and procedures for exporting or backing up configurations.  |
 | [Network Diagram Updates](docs/Network-Design.md)            | Provides updated logical and physical network diagrams reflecting Milestone 3 changes.                                     |
 | [Testing Results](docs/Testing-Results.md)                   | Contains verification evidence for login, DNS, DHCP, GPO, and firewall functionality.                                      |
