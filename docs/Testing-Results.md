@@ -1,4 +1,4 @@
-# Testing Results
+# Testing Results and Evidence
 
 ## Login & DNS resolution
 
@@ -10,4 +10,8 @@
 
 ## Policy Application
 
+![Policy Application](assets/Policy%20Application.png)
+
 ## Firewall Enforcement
+
+Firewall configuration screenshots can be found in [Firewall Documentation](./Firewall-Rules.md)
