@@ -109,7 +109,7 @@ Send Logs to Security Server (Wazuh)
 ## Floating Rules 
 Updated Rules:
 
-Allow DNS from All VLANs → BIND9 DNS adn AD
+Allow DNS from All VLANs → BIND9 DNS and AD
 
 Allow Logs to Security (Wazuh)
 - All VLANs can still send logs to Wazuh
