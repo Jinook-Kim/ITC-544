@@ -84,7 +84,69 @@ Removal of all local admin rights
 Installation attempts logged for compliance monitoring
 
 ## Access Control Policy
+### 1. Admin GPO
 
+Applied only to administrator-level groups.
+
+Purpose:
+Grant elevated access to servers, admin consoles, and IT tools.
+
+Groups assigned:
+
+IT_Admins
+
+IT_Dept
+
+IT_Executives
+
+Servers
+
+Admin_Workstations
+
+Capabilities:
+
+Access to server management tools
+
+Access to domain/admin consoles
+
+Ability to perform administrative tasks
+
+Elevated permissions where required
+
+### 2. Regular Users GPO
+
+Applied to all non-admin user groups.
+
+Purpose:
+Restrict access to all administrative tools and server consoles.
+
+Groups assigned:
+
+Sales_Dept
+
+Content_Dept
+
+Customer_Service_Dept
+
+HR_Dept
+
+Graphics_Dept
+
+BI_Dept
+
+Workstations
+
+Standard user roles
+
+Capabilities Restricted:
+
+No server access
+
+No admin console access
+
+No elevation or privilege escalation
+
+Use of approved business applications only
 
 
 
