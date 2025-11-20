@@ -43,6 +43,9 @@ NO CHANGES HAVE BEEN MADE TO THESE RULES
 **Hosts/Services**: MySQL Database, TrueNAS File Server   
 - Allow **Web Server (213) → Servers (212)** for database access (MySQL only).  
 - Deny **all other traffic**.
+
+  NO CHANGES HAVE BEEN MADE TO THESE RULES
+  
 <img width="515" height="212" alt="image" src="https://github.com/user-attachments/assets/2e985843-347d-4012-8e68-89f41400fd9e" />
 
 
