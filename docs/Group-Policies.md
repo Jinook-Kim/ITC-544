@@ -39,6 +39,134 @@ List key GPOs by user or device group.
 | ---- | ------------------ | --------- |
 |      |                    |           |
 
-## Testing & Validation
+## 1. Policies Applied to User Groups
+### Password & Security Policy
 
-Document the results of GPO application testing (e.g., user login restrictions, mapped drives, security policies).
+Minimum password length: 12 characters
+
+Enforce password complexity (uppercase, lowercase, number, symbol)
+
+Account lockout after 5 failed login attempts
+
+Password history enforced to prevent reuse
+
+Applies to all user groups
+
+### Software Deployment (SD) Policy
+
+Content_Dept
+
+Allowed to install Microsoft applications only
+
+All other software installations blocked
+
+All Other User Groups
+
+No installation rights
+
+Must use IT-approved, centrally deployed software only
+
+IT_Admins / IT_Dept / IT_Executives
+
+Full install rights only on:
+
+Admin workstations
+
+Servers
+
+Installation on standard devices limited to support tasks
+
+Enforcement Tools
+
+AppLocker / Software Restriction Policies
+
+Removal of all local admin rights
+
+Installation attempts logged for compliance monitoring
+
+### Access Control Policy
+
+Access based strictly on group membership
+
+Servers group
+
+Only server admins and IT_Admins have access
+
+Admin_Workstations
+
+Admin rights only for IT staff
+
+Standard Users
+
+Restricted from:
+
+System directories
+
+Admin consoles
+
+Sensitive resources
+
+Department Groups (Sales, Content, Graphics, HR, BI, etc.)
+
+Access only to applications needed for their role
+
+### Administrative Rights Assignment
+
+Full Administrative Rights
+
+IT Managers
+
+Network Admins
+
+Members of: IT_Admins, IT_Dept, IT_Executives, Servers
+
+Delegated Rights
+
+Executives (CTO, Directors)
+
+Limited admin access for business-critical tools only
+
+Standard Rights
+
+All other groups (Customer_Service, Sales, HR, Content, Graphics, etc.)
+
+No local admin privileges
+
+## 2. Policies Applied to Device Groups
+### Admin_Workstations
+
+Full administrative permissions
+
+Access to diagnostic and configuration tools
+
+Can install and manage software
+
+Used by IT staff only
+
+### Workstations (Standard User Devices)
+
+No admin rights for end users
+
+Company-standard desktop configuration
+
+Mandatory IT-approved software only
+
+Restricted access to OS settings and Control Panel
+
+### Servers Group
+
+Strictly limited administrative access
+
+Server hardening baseline applied
+
+Installation limited to approved server software
+
+Logging and monitoring enforced
+
+### Device Configuration Rules
+
+Corporate theme, standardized settings, locked-down configurations
+
+Restricted access to removable media for sensitive groups (BI, HR, IT)
+
+Automatic updates, Defender Antivirus, and endpoint protection enforced
