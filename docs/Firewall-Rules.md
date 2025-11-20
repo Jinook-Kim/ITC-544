@@ -21,7 +21,7 @@ Allow DNS to Networking net (53 TCP/UDP)
 Allow LDAP (389 TCP) to Workstations & Networking nets
 - This is a new rule giving AdminManagement VLAN LDAP access to domain-joined machines and/or your domain controllers.
 - Purpose: Domain authentication, AD queries, management.
-<img width="512" height="276" alt="image" src="https://github.com/user-attachments/assets/1bf37786-f48f-4a2a-9b89-e797613ab6dc" />
+<img width="1008" height="519" alt="image" src="https://github.com/user-attachments/assets/75acd32d-e705-466d-b770-94586b14e03d" />
 
 
 ---
