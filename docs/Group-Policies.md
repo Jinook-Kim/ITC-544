@@ -85,72 +85,8 @@ Installation attempts logged for compliance monitoring
 
 ## Access Control Policy
 
-Access based strictly on group membership
 
-Servers Group
 
-Only server admins and IT_Admins have access
-
-Admin_Workstations
-
-Admin rights only for IT staff
-
-Standard Users
-
-Restricted from:
-
-System directories
-
-Admin consoles
-
-Sensitive resources
-
-Department Groups
-
-(Sales, Content, Graphics, HR, BI, etc.)
-
-Access only to applications needed for their role
-
-## Administrative Rights Assignment
-Full Administrative Rights
-
-IT Managers
-
-Network Admins
-
-Members of:
-
-IT_Admins
-
-IT_Dept
-
-IT_Executives
-
-Servers
-
-Delegated Rights
-
-Executives (CTO, Directors)
-
-Limited admin access for business-critical tools only
-
-Standard Rights
-
-All other groups
-
-Customer_Service
-
-Sales
-
-HR
-
-Content
-
-Graphics
-
-Etc.
-
-No local admin privileges
 
 # 2. Policies Applied to Device Groups
 ## Admin_Workstations
