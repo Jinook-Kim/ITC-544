@@ -44,3 +44,4 @@
   repadmin /showrepl AD-BACKUP
   ```
   ![Replication Settings](assets/Replication%20Settings.png)
+  ![ADSS](assets/ADSS.png)
