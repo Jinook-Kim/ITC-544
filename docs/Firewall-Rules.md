@@ -56,6 +56,9 @@ NO CHANGES HAVE BEEN MADE TO THESE RULES
 - Allow **WAN → Web Server (213)** on TCP 80/443 only.  
 - Allow **Admin/Management (210) → Web Server (213)** on management ports (SSH, RDP if applicable).  
 - Deny all inbound traffic from other VLANs.
+
+NO CHANGES HAVE BEEN MADE TO THESE RULES
+
 <img width="514" height="219" alt="image" src="https://github.com/user-attachments/assets/5048aa93-7cc7-403c-b0b1-651edc105a86" />
 
 
