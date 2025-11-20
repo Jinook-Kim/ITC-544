@@ -31,6 +31,9 @@ Allow LDAP (389 TCP) to Workstations & Networking nets
 - Allow **all other VLANs → Security (211)** for log forwarding.  
 - Allow **Admin/Management (210) → Security (211)** for administration (e.g., SSH, web console).  
 - Deny **all other traffic**.
+
+NO CHANGES HAVE BEEN MADE TO THESE RULES
+
 <img width="518" height="216" alt="image" src="https://github.com/user-attachments/assets/2ac7544d-bf2d-4c7d-b6d4-5b61aa8f6908" />
 
 
