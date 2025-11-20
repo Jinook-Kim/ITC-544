@@ -136,8 +136,6 @@ BI_Dept
 
 Workstations
 
-Standard user roles
-
 Capabilities Restricted:
 
 No server access
