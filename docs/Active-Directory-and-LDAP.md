@@ -1,39 +1,46 @@
-# Active Directory & LDAP
+# Active Directory & LDAP Setup
 
-## Overview
+## Domain Creation and Configuration
 
-Briefly describe the purpose of Active Directory and LDAP in your environment, including authentication, authorization, and directory services.
+**Primary Domain Controller (DC):**
 
-## Domain Controllers
+- Hostname: `AD-PRIMARY`
+- IP: `10.0.10.11`
 
-| Role       | Hostname | IP Address | OS Version | Description |
-| ---------- | -------- | ---------- | ---------- | ----------- |
-| Primary DC |          |            |            |             |
-| Backup DC  |          |            |            |             |
+**Backup Domain Controller (DC):**
 
-## Configuration Details
+- Hostname: `AD-BACKUP`
+- IP: `10.0.10.21`
 
-- Domain Name:
-- Forest/Tree Information:
-- LDAP Base DN:
-- Replication Setup:
+**Steps:**
 
-## User & Group Management
+1. Installed the AD DS role on both servers.
+2. Promoted `AD-PRIMARY` as the first domain controller for the `sysadmin.local` domain.
+3. Joined `AD-BACKUP` to the domain and promoted it as a secondary domain controller.
+4. Verified replication and global catalog roles.
+5. Configured DNS and forwarders on both controllers.
 
-Describe your organizational structure and account management practices.
+---
 
-| Group Name | Purpose | Members | Notes |
-| ---------- | ------- | ------- | ----- |
-|            |         |         |       |
+## LDAP Schema and Integration Details
 
-### Procedures
+- **Schema version:** 88
+- **Base DN:** `DC=sysadmin,DC=local`
+- **Key objects:** `user`, `group`, `organizationalUnit`, `computer`
+- **Organizational structure:**
+  - `FriedChickenCo` (custom OU)
+    - `Groups`
+    - `Users`
+    - `Workstations`
+- This structure follows the default Active Directory LDAP schema and organizes directory objects by function for easier management.
+- **Integration:** Standard LDAP connection (port **389**) used for user and group authentication and directory queries between clients and the domain controllers (`AD-PRIMARY` and `AD-BACKUP`).
 
-1. Creating a new user
-2. Adding a user to a group
-3. Disabling or deleting accounts
+---
 
-## Backup & Recovery
+## Replication Settings and Verification
 
-- Backup frequency:
-- Backup tool or script:
-- Restoration steps:
+- Verified replication between `AD-PRIMARY` and `AD-BACKUP` using:
+  ```cmd
+  repadmin /showrepl AD-BACKUP
+  ```
+  ![Replication Settings](assets/Replication%20Settings.png)
