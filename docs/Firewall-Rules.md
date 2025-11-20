@@ -79,7 +79,30 @@ NO CHANGES HAVE BEEN MADE TO THESE RULES
 ### VLAN 215 – Networking (10.0.60.0/24)
 **Hosts/Services**: OpenVPN clients, OPNsense Router, DNS, DHCP  
 - Allow **VPN (215) → Admin/Management (210), Servers (212), and Workstations (214)** on necessary ports (RDP, SMB, SSH, etc.).  
-- Deny **all other traffic**.  
+- Deny **all other traffic**.
+
+Changed Rules:
+
+Allow DNS to External Resolvers
+- Allows devices in this VLAN to reach Google and Cloudflare DNS servers.
+
+Allow Ping
+- Allows basic network diagnostics (ping).
+
+Allow HTTP/HTTPS (Web_Ports alias)
+- Permits HTTP and HTTPS web services
+
+Allow VPN Clients → WebServer
+- Allows VPN clients (which land in Networking net) to reach internal web apps on the WebServer VLAN (213).
+
+Allow LDAP to AdminManagement VLAN
+- Enables devices in Networking VLAN to authenticate to Active Directory in AdminManagement VLAN.
+
+Send Logs to Security Server (Wazuh)
+- Allows syslog/Wazuh traffic to the Security VLAN.
+
+<img width="1039" height="439" alt="image" src="https://github.com/user-attachments/assets/db5c80f8-790e-4eac-b077-5d4cfd7dfaff" />
+
 
 ---
 
