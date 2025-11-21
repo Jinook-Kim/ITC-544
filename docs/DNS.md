@@ -36,7 +36,11 @@ It supports Active Directory by resolving domain controllers (`ad1`, `ad2`) and 
 | A           | vpn     | 10.0.60.11 | 604800 | OpenVPN Server                 |
 | A           | metric  | 10.0.70.10 | 604800 | Graphite Metrics/Backup Server |
 | CNAME       | www     | website    | 604800 | Web server alias               |
-| MX          | @       | ad1        | 604800 | (If mail service is configured)|
+| MX          | @       | None       | N/A    | No mail server configured; MX not present |
+| PTR         | 10.0.60.10             | dns.sysadmin.local | 604800 | Reverse DNS                       |
+| SRV         | _ldap._tcp             | AD1/AD2          | Default | Required for AD LDAP lookups      |
+| SRV         | _kerberos._tcp         | AD1/AD2          | Default | Kerberos authentication           |
+
 
 ## Forwarding & Resolution
 
