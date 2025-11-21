@@ -244,4 +244,29 @@ $TTL 604800
     IN  NS  dns.sysadmin.local.
 10  IN  PTR metric.sysadmin.local.
 ```
+## Zone Transfer & Replication Configuration
 
+```
+allow-transfer { none; };
+```
+
+Zone transfers are disabled for all zones.  
+Reason: No secondary BIND DNS servers exist in the environment, and disabling zone transfers prevents unauthorized replication of DNS data.
+
+Active Directory DNS (running on AD1 and AD2) replicates automatically through **AD DS multi-master replication**.  
+BIND9 is **not** part of AD DNS replication.
+
+---
+
+## Troubleshooting DNS Resolution
+
+| Issue | Cause | Fix |
+|-------|-------|-----|
+| NXDOMAIN when resolving internal hostname | A record missing or incorrect | Add or correct A record in `db.sysadmin.local` |
+| Reverse lookup fails (PTR not found) | Reverse zone name structure incorrect | Reverse zone must be **40.0.10.in-addr.arpa**, not **10.0.40** |
+| Reverse lookup fails for hosts | PTR entry missing in corresponding reverse zone file | Add PTR entry with last octet only |
+| Clients cannot resolve external websites | Forwarders misconfigured | Ensure forwarders `8.8.8.8` and `1.1.1.1` are in `named.conf.options` |
+| DNS server stops resolving anything | BIND9 failed to reload due to syntax error | Run `sudo named-checkconf` and `sudo named-checkzone` on all zones |
+| Some VLANs cannot query DNS | Firewall blocking UDP/TCP 53 | Allow port 53 from all internal VLAN networks |
+
+---
