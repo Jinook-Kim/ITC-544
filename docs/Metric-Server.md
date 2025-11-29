@@ -87,7 +87,7 @@ aliasByNode(asPercent(
 ```
 
 ### 2.3 Disk Usage Alert (> 80%, Database Server)
-Database server disk-specific alerts query used:
+Database server disk-specific alert query used:
 ```
 alias(asPercent(
   collectd.DB-SERVER.df-root.df_complex-used,
@@ -96,7 +96,7 @@ alias(asPercent(
 ```
 
 ### 2.4 DDoS Detection Alerts (Web / OpenVPN Servers)
-Triggered by abnormal packet drops:
+Triggered by over 100 packet drops in a minute. Query used:
 ```
 alias(nonNegativeDerivative(collectd.OPENVPN-SERVER.interface-*.if_dropped.rx), 'Inbound Packet Drops')
 ```
