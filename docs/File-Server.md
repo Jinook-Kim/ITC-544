@@ -1,11 +1,3 @@
-All folders are stored within:
-
-```
-\\FILESERVER\CompanyShares
-```
-
----
-
 ## 1. HR Folder
 
 **Path:**
@@ -140,3 +132,4 @@ All folders are stored within:
 |-------|------------|---------|
 | **Authenticated Users** | Modify | All domain users |
 | **IT_Admins** | Full Control | Eric Nguyen |
+
