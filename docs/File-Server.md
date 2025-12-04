@@ -28,6 +28,8 @@
 | **IT_Executives** | Read | Emily Brown |
 | **Everyone Else** | No Access | — |
 
+<img width="943" height="601" alt="IT Permissions" src="https://github.com/user-attachments/assets/466f65af-bd41-4457-a6e0-6e75b37debd4" />
+
 ---
 
 ## 3. Directors Folder
@@ -132,4 +134,5 @@
 |-------|------------|---------|
 | **Authenticated Users** | Modify | All domain users |
 | **IT_Admins** | Full Control | Eric Nguyen |
+
 
