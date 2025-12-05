@@ -114,23 +114,67 @@ Users must receive a unique `client.conf` file (obtained after MFA verification)
   ```
   AllowedIPs = 10.8.0.0/24, 10.0.10.0/24, 10.0.30.0/24, 10.0.40.0/24, 10.0.50.0/24
   ```
+### Example Client Configuration File (client1.conf)
+
+```
+[Interface]
+# Unique Private Key for the client device (MUST be kept secret)
+PrivateKey = [CLIENT_PRIVATE_KEY_GENERATED_BY_SERVER]
+
+# The IP address assigned to this client inside the VPN tunnel
+Address = 10.8.0.2/32
+
+# Internal DNS server IP (VLAN 210 AD/DNS) for internal resource resolution
+DNS = 10.0.10.10 
+
+[Peer]
+# The Server's Public Key (allows the client to encrypt data to the server)
+PublicKey = [SERVER_PUBLIC_KEY]
+
+# The public IP and port of the WireGuard server 
+Endpoint = 128.187.49.253:51820
+
+# REQUIRED FOR SPLIT-TUNNELING:
+# This lists all subnets the client is allowed to send through the tunnel.
+# Includes: VPN Tunnel subnet (10.8.0.0/24) and all internal VLANs (210, 212, 213, 214)
+AllowedIPs = 10.8.0.0/24, 10.0.10.0/24, 10.0.30.0/24, 10.0.40.0/24, 10.0.50.0/24
+
+# Sends a small packet every 15 seconds to keep NAT open (recommended)
+PersistentKeepalive = 15
+```
 
 ### 4.2 Connection Steps
 
-- Install Client: Install the WireGuard application.
+- Install Client: Install the WireGuard application. (https://www.wireguard.com/install/)
 
 - Import Tunnel: Import the unique `client.conf` file.
 
+  <img width="724" height="527" alt="image" src="https://github.com/user-attachments/assets/2600cf1d-898b-48a1-94d2-595b3bafb51f" />
+
+
 - Activate Tunnel: Click Activate to establish the secure VPN tunnel.
+
+  <img width="726" height="531" alt="image" src="https://github.com/user-attachments/assets/08a359b7-cfa3-48bb-9c6e-8d602515bd5c" />
+
+- verify your new tunnel connection statistics.
+
+  <img width="715" height="523" alt="image" src="https://github.com/user-attachments/assets/1f14a494-971c-49ab-99b1-37c5e236334c" />
+
 
 ## 5. ✅ Test Results and Troubleshooting Steps
 
 Service Status
 
+<img width="882" height="329" alt="image" src="https://github.com/user-attachments/assets/23bd2e16-18f7-48c7-b788-2c879fca8eee" />
+
+
 Tunnel Check
+
+<img width="528" height="128" alt="image" src="https://github.com/user-attachments/assets/15262d9f-1685-4e5f-addb-3a7109cba7af" />
 
 ### Troubleshooting NAT:
 
 If connection fails: Verify NAT and firewall rules on OPNsense are correct and the server's IP forwarding is enabled `sudo sysctl -p`
 
 > No changes to GPO
+
