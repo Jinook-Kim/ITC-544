@@ -1,9 +1,8 @@
-# Documentation Pages (Milestone 4)
+# Documentation Pages (Milestone 5)
 
-| Page                                                           | Description                                                                                                             |
-| -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| [File Server](docs/File-Server.md)                             | Centralized file storage configuration, access control mappings, workstation connection details, and backup procedures. |
-| [Vulnerability Scanning](docs/Vulnerability-Scanning.md)       | Setup and execution of vulnerability scans, results, risk assessment, and mitigation planning.                          |
-| [VPN Server](docs/VPN-Server.md)                               | VPN installation, configuration, authentication, firewall rules, connection instructions, and testing documentation.    |
-| [SIEM & Endpoint Protection](docs/SIEM-Endpoint-Protection.md) | Deployment of SIEM and endpoint protection tools, log collection sources, alert rules, and dashboard screenshots.       |
-| [Metric Server (Extra Credit)](docs/Metric-Server.md)          | Metric server setup, monitoring dashboards, alert thresholds, and response procedures.                                  |
+| Page                                                            | Description                                                                                                                                |
+| --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Backup Policy](docs/Backup-Policy.md)                          | Comprehensive backup strategy including retention periods, backup types, encryption, automation, off-site storage, and the 3-2-1-1-0 rule. |
+| [Disaster Recovery Policy](docs/Disaster-Recovery-Policy.md)    | Disaster recovery framework covering risk assessment, RTO/RPO definitions, system recovery procedures, DR sites, and communication plans.  |
+| [Testing and Verification Logs](docs/Testing-Verification.md)   | Documentation for backup restore testing, verification schedules, audit logs, and zero-error validation processes.                         |
+| [Recovery Procedures & Checklists](docs/Recovery-Checklists.md) | Step-by-step restoration procedures, checklists for system/application recovery, escalation paths, and post-incident review steps.         |
