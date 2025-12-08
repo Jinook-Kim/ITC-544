@@ -1,4 +1,4 @@
-# Part 1: Backup Policy (DR-Aligned Final Version)
+# Backup Policy 
 
 ## 1. Purpose
 
@@ -195,3 +195,4 @@ Reviewed annually or after infrastructure changes.
 -   Bi-annual policy review
 -   Quarterly tabletop DR exercises
 -   Annual full live recovery test
+
