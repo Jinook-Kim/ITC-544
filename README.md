@@ -1,8 +1,4 @@
-# Team Network Infrastructure Documentation
-
-This write-up provides an overview and detailed documentation of our team’s network setup, including systems, network design, disaster recovery, firewall rules, policies, host inventories, and hardware planning.
-
-## Documentation Pages (Milestone 4)
+# Documentation Pages (Milestone 4)
 
 | Page                                                           | Description                                                                                                             |
 | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
