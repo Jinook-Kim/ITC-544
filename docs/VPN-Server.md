@@ -172,9 +172,14 @@ Tunnel Check
 
 <img width="528" height="128" alt="image" src="https://github.com/user-attachments/assets/15262d9f-1685-4e5f-addb-3a7109cba7af" />
 
+Ping:
+
+<img width="562" height="212" alt="image" src="https://github.com/user-attachments/assets/d8d20f14-833d-460f-bc83-9974bdc0d7ea" />
+
 ### Troubleshooting NAT:
 
 If connection fails: Verify NAT and firewall rules on OPNsense are correct and the server's IP forwarding is enabled `sudo sysctl -p`
 
 > No changes to GPO
+
 
