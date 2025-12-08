@@ -48,7 +48,7 @@ Recovery Objectives define the target timeframes for recovery. RTO (Recovery Tim
 | 4. Systems/Identity Specialist        | Identity and Core Services. Restores authentication, critical servers, and operating systems.                             | Priority 1: Manages AD Failover (Primary to Backup). Restores/rebuilds virtual machines (VMs) for all Tier 1/T2 systems. |
 | 5. Data & Application Specialist      | Data Integrity and Application Functionality. Restores data from the Onsite/Offsite Backup Servers and validates application functionality. | Priority 4: Restores Database Server (MySQL) from high-frequency logs/backup. Restores File Server (TrueNAS) data.    |
 
-## Disaster Recovery Policy: Contact Information Registry
+## 4. Contact Information Registry
 
 ### A. Internal DR Team Contacts (Tier 1 Priority)
 
@@ -80,7 +80,46 @@ Recovery Objectives define the target timeframes for recovery. RTO (Recovery Tim
 | Local Medical          | Emergency Dispatch    | 911 (or local equivalent) | [Closest Hospital Address]     |
 | Facilities Management  | Building Maintenance  | [Contact Number]      | N/A                             |
 
-## Data Backup and Restoration Procedures
+## 5. Data Backup and Restoration Procedures
 
-## Disaster Recovery Site
+## 6. Disaster Recovery Site
+
+## 7. Hardware and Software Inventory
+| System                  | Role                          | OS/Platform            | Hardware Type          | Replacement Strategy (Source/Method)                                                                                     |
+|-------------------------|------------------------------|-------------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| AD-P & AD-B             | Primary & Backup AD DS        | Windows Server 2022     | Virtual Machine (VM)    | Failover & Template: Immediate failover to Backup AD. Rebuild using standardized Server 2022 VM template.                |
+| Router/Firewall         | Network Core/Security         | Hardened BSD (OPNsense) | Virtual Machine (VM)    | Configuration Backup: Restore configuration to a pre-staged OPNsense VM/Appliance.                                       |
+| DNS Server              | BIND9 Name Resolution         | Ubuntu Server           | Virtual Machine (VM)    | VM Template: Rebuild VM. Restore zone files from backup (RPO ≤ 1 hr).                                                     |
+| Database Server         | MySQL Core Data               | Ubuntu Server           | Virtual Machine (VM)    | Data Stream: Restore from high-frequency transaction logs (RPO ≤ 15 mins).                                                |
+| SIEM Server             | Wazuh Security Monitoring     | Kali Purple             | Virtual Machine (VM)    | VM Template: Rebuild VM from template. Restore configuration and archive historical logs.                                 |
+| Web Server              | Apache Website Host           | Ubuntu Server           | Virtual Machine (VM)    | Codebase Backup: Rebuild VM from template. Restore code and configuration (RPO ≤ 4 hrs).                                  |
+| File Server             | TrueNAS Central Storage       | TrueNAS Core            | Virtual Machine (VM)    | Data Backup: Rebuild VM from template. Restore data from incremental backup (RPO ≤ 4 hrs).                                |
+| VPN Server              | Secure Remote Access          | Ubuntu Server           | Virtual Machine (VM)    | Configuration: Rebuild VM from template. Restore WireGuard configuration.                                                 |
+| Onsite Backup Server    | Local Backup Store            | Linux/Backup OS         | Virtual Machine (VM)    | Lowest Priority: Verify access to offsite storage immediately.                                                            |
+| Metric Server           | Graphite Monitoring           | Ubuntu Server           | Virtual Machine (VM)    | Rebuild: Restore monitoring configuration and application.                                                                |
+| Vulnerability Scanner   | Security Testing              | Kali Purple             | Virtual Machine (VM)    | Rebuild: Reinstall application and configuration.                                                                         |
+| Windows Clients (5x)    | User Workstations             | Windows 10              | Physical                | Physical/Image Deployment: Replace hardware. Deploy standardized Windows 10 golden image.                                 |
+| Linux Client (Workstation) | User Workstation         | Debian Desktop 13.1.0   | Physical                | Physical/Image Deployment: Deploy standardized Debian image.                                                              |
+| Linux Client (Admin)    | Admin Workstation             | Ubuntu Desktop          | Physical    | VM Template: Restore using standard Ubuntu VM template.                                            
+
+## 8. Network Infrastructure
+
+## 9. Application Recovery Procedures
+
+## 10. Testing and Maintenance
+
+## 11. Training and Awareness
+
+## 12. Vendor and Supplier Contingency Plans
+
+## 13. Financial and Legal Considerations
+
+## 14. Emergency Response Procedures
+
+## 15. Incident Reporting and Escalation
+
+## 16. Communication Plan
+
+## 17. Post-Recovery Evaluation
+
 
