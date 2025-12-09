@@ -1,6 +1,6 @@
-# 🏗️ Milestone 1 – Network & Physical Design
+# Network & Physical Design
 
-This milestone documents the foundational architecture of the enterprise network including topology, hardware planning, and physical layout.
+Documents the foundational architecture of the enterprise network including topology, hardware planning, and physical layout.
 
 ---
 
