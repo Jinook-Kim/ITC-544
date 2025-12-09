@@ -8,7 +8,7 @@ All milestone documentation is included below in one unified structure.
 
 ## 🧩 Network & Systems Design
 
-This milestone establishes the foundational architecture of the enterprise network, covering physical and logical topology, hardware planning, policies, and host documentation.
+Establishes the foundational architecture of the enterprise network, covering physical and logical topology, hardware planning, policies, and host documentation.
 
 | Page | Description |
 |------|-------------|
@@ -24,7 +24,7 @@ This milestone establishes the foundational architecture of the enterprise netwo
 
 ## 👥 Directory Services & Access Control
 
-This milestone defines the authentication, authorization, and directory service design, ensuring secure and centralized access control for users and devices.
+Defines the authentication, authorization, and directory service design, ensuring secure and centralized access control for users and devices.
 
 | Page | Description |
 |------|-------------|
@@ -38,7 +38,7 @@ This milestone defines the authentication, authorization, and directory service 
 
 ## 🌐 Network Services & Security Controls
 
-This milestone documents the core network services and access control rules that define the secure communication and segmentation structure of the network.
+Documents the core network services and access control rules that define the secure communication and segmentation structure of the network.
 
 | Page | Description |
 |------|-------------|
@@ -54,7 +54,7 @@ This milestone documents the core network services and access control rules that
 
 ## 📊 Monitoring, SIEM & VPN
 
-This milestone covers system visibility, real-time security monitoring, and remote access. It integrates SIEM tools, endpoint protection, and VPN solutions for secure connectivity.
+Covers system visibility, real-time security monitoring, and remote access. It integrates SIEM tools, endpoint protection, and VPN solutions for secure connectivity.
 
 | Page | Description |
 |------|-------------|
@@ -69,7 +69,7 @@ This milestone covers system visibility, real-time security monitoring, and remo
 
 ## 🛡️ Business Continuity & Disaster Recovery
 
-This milestone ensures continuity of operations and organizational resilience through structured backup, restoration, and disaster recovery planning.
+Ensures continuity of operations and organizational resilience through structured backup, restoration, and disaster recovery planning.
 
 | Page | Description |
 |------|-------------|
@@ -80,17 +80,6 @@ This milestone ensures continuity of operations and organizational resilience th
 
 ---
 
-## 🧾 Quick Reference: File Index
-
-| Milestone | Documentation Files |
-|------------|---------------------|
-| **1 – Network & Systems Design** | `docs/Network-Design.md`, `docs/Hardware-Planning.md`, `docs/Logical.png`, `docs/Physical.png`, `docs/Hosts-Inventory.md`, `docs/Policies.md`, `docs/Technologies-and-Software.md` |
-| **2 – Directory Services & Access Control** | `docs/Active-Directory-and-LDAP.md`, `docs/Users-And-Groups.md`, `docs/Group-Policies.md`, `docs/Assumptions-and-Justifications.md`, `docs/File-Server.md` |
-| **3 – Network Services & Security Controls** | `docs/DHCP.md`, `docs/DNS.md`, `docs/Router.md`, `docs/Firewall-Rules.md`, `docs/Security-Rules.md`, `docs/File-Server.md`, `docs/Policies.md` |
-| **4 – Monitoring, SIEM & VPN** | `docs/SIEM-Endpoint-Protection.md`, `docs/Metric-Server.md`, `docs/VPN-Server.md`, `docs/Vulnerability-Scanning.md`, `docs/Technologies-and-Software.md`, `docs/Firewall-Rules.md` |
-| **5 – Business Continuity & DR** | `docs/Backup-Policy.md`, `docs/Disaster-Recovery-Policy.md`, `docs/Testing-Verification.md`, `docs/Recovery-Checklists.md` |
-
----
 
 ## ✅ Deployment Readiness Status
 
