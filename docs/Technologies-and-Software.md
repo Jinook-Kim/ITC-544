@@ -8,7 +8,7 @@ This page lists all operating systems and software used in the environment.
 | DNS Server                 | Ubuntu Server               | BIND9 / BIND      |
 | SIEM                       | Kali Purple                 | Wazuh             |
 | Web Server                 | Ubuntu Server               | Apache            |
-| VPN Server                 | Ubuntu Server               | OpenVPN           |
+| VPN Server                 | Ubuntu Server               | Wireguard         |
 | File Server                | Windows Server 2022         | Windows File Server|
 | Active Directory (Primary) | Windows Server 2022         | AD DS             |
 | Active Directory (Backup)  | Windows Server 2022         | AD DS             |
