@@ -46,7 +46,6 @@ Documents the core network services and access control rules that define the sec
 | [DNS](docs/DNS.md) | DNS zones, records, and redundancy configuration. |
 | [Router](docs/Router.md) | Routing policies, NAT behavior, and gateway configuration. |
 | [Firewall Rules](docs/Firewall-Rules.md) | Principle of least privilege firewall rule set for VLANs and external traffic. |
-| [Security Rules](docs/Security-Rules.md) | Centralized list of access control lists and VLAN segmentation policies. |
 | [File Server](docs/File-Server.md) | Shared directory permissions and access control. |
 | [Policies](docs/Policies.md) | Operational and compliance frameworks governing network behavior. |
 
