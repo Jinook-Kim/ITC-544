@@ -60,7 +60,7 @@ This section explains the assumptions made during the network and VM setup, alon
 - The Proxmox host uses **LACP bonding (Cables C1 & C2)** for redundancy and bandwidth aggregation.  
 - Each VM’s resources are allocated based on its function, with **snapshots** created after installation for rollback capability.  
 - VMs are grouped using **Proxmox pools** for organization:  
-  - `network` – Router, DNS, OpenVPN  
+  - `network` – Router, DNS, Wireguard
   - `security` – AD, SIEM, Metrics  
   - `application` – Web Server, MySQL  
 - Tags (e.g., `router`, `web`, `ad`, `vpn`) help with filtering, monitoring, and resource tracking.  
