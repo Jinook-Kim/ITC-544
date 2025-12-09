@@ -48,7 +48,7 @@ sudo bash wazuh-install.sh --wazuh-server wazuh-1
 
 https://10.0.20.10
 
-![alt text](image-1.png)
+<img width="1907" height="1148" alt="image" src="https://github.com/user-attachments/assets/64e069a5-d0a9-485b-945d-c41d105e913f" />
 
 ## Endpoint Protection Deployment (Wazuh Agents)
 
@@ -226,3 +226,4 @@ Conclusion
 =============
 
 A fully functional SIEM + EDR environment was deployed using the Wazuh Installation Assistant. The system provides real-time monitoring, alerting, file integrity protection, configuration auditing, and centralized event visibility across all servers, workstations, and network devices.
+
