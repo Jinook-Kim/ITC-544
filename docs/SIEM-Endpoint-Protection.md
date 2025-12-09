@@ -78,7 +78,8 @@ The following servers in the environment have the Wazuh agent installed:
 | 007  | WIN-WS-04        | 10.0.50.9   | Windows 10 Enterprise           | v4.7.5         |
 
 ---
-![alt text](<Screenshot 2025-12-08 155326.png>)
+<img width="1912" height="862" alt="image" src="https://github.com/user-attachments/assets/bb8d5a48-ca92-42cb-87b9-c34f534ccca1" />
+
 ---
 
 
@@ -204,7 +205,8 @@ The following alert categories were configured to detect suspicious or high-risk
 Testing & Validation
 ==========================
 
-Bruteforce Alert : ![alt text](image-2.png)
+Bruteforce Alert : <img width="1913" height="1136" alt="image" src="https://github.com/user-attachments/assets/7645b1d1-3aec-4f46-83f0-f036a75168b9" />
+
 
 Required Dashboard Screenshots
 ====================================
@@ -212,18 +214,24 @@ Required Dashboard Screenshots
 The following screenshots were added to demonstrate SIEM functionality:
 
 *   Wazuh Overview Dashboard
-![alt text](image-5.png)
+<img width="1904" height="972" alt="image" src="https://github.com/user-attachments/assets/3fce95e9-abe7-43c8-bf06-e8999f40ba27" />
+
 *   Endpoint Summary
-![alt text](image-4.png)
+<img width="1888" height="961" alt="image" src="https://github.com/user-attachments/assets/c308ab6d-b575-4ff4-aeb3-45a9b730c2b4" />
+
 *   MITRE ATT&CK Mapping
-![alt text](image-6.png)
+<img width="1914" height="965" alt="image" src="https://github.com/user-attachments/assets/2af4491f-e01a-4239-be31-7631b2671526" />
+
 *   Indexes
-![alt text](image-7.png)
+<img width="1894" height="964" alt="image" src="https://github.com/user-attachments/assets/8baa747f-b391-4f6d-808a-9518ad5447b0" />
+
 *   Alert Timeline
-![alt text](image-3.png)
+<img width="1919" height="1088" alt="image" src="https://github.com/user-attachments/assets/c07e68c6-a146-4cb1-95b2-c4e6b9fffbac" />
+
 
 Conclusion
 =============
 
 A fully functional SIEM + EDR environment was deployed using the Wazuh Installation Assistant. The system provides real-time monitoring, alerting, file integrity protection, configuration auditing, and centralized event visibility across all servers, workstations, and network devices.
+
 
