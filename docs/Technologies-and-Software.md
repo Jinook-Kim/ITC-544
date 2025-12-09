@@ -9,7 +9,7 @@ This page lists all operating systems and software used in the environment.
 | SIEM                       | Kali Purple                 | Wazuh             |
 | Web Server                 | Ubuntu Server               | Apache            |
 | VPN Server                 | Ubuntu Server               | OpenVPN           |
-| File Server                | TrueNAS Core                | TrueNAS           |
+| File Server                | Windows Server 2022         | Windows File Server|
 | Active Directory (Primary) | Windows Server 2022         | AD DS             |
 | Active Directory (Backup)  | Windows Server 2022         | AD DS             |
 | Metric Server              | Ubuntu Server               | Graphite          |
