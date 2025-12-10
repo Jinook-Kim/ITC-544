@@ -28,7 +28,6 @@ Defines the authentication, authorization, and directory service design, ensurin
 
 | Page | Description |
 |------|-------------|
-
 | [Network Design](docs/Network-Design.md) | Logical network topology, VLAN segmentation, routing design, and IP addressing. |
 | [Hosts Inventory](docs/Hosts-Inventory.md) | Inventory of all servers, workstations, and network appliances. |
 | [Router](docs/Router.md) | Routing policies, NAT behavior, and gateway configuration. |
@@ -44,7 +43,6 @@ Documents the core network services and access control rules that define the sec
 
 | Page | Description |
 |------|-------------|
-
 | [Active Directory & LDAP](docs/Active-Directory-and-LDAP.md) | Domain structure, organizational units, LDAP integration, and authentication methods. |
 | [DHCP](docs/DHCP.md) | DHCP scopes, reservations, and IP lease management. |
 | [DNS](docs/DNS.md) | DNS zones, records, and redundancy configuration. |
@@ -61,7 +59,6 @@ Covers system visibility, real-time security monitoring, and remote access. It i
 
 | Page | Description |
 |------|-------------|
-
 | [File Server](docs/File-Server.md) | File sharing configuration, NTFS permissions, and access enforcement. |
 | [SIEM & Endpoint Protection](docs/SIEM-Endpoint-Protection.md) | Wazuh deployment, endpoint agent configuration, and alert correlation. |
 | [Metric Server](docs/Metric-Server.md) | Resource monitoring, uptime metrics, and dashboard visualization. |
