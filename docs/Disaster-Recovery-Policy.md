@@ -110,34 +110,99 @@ Recovery Objectives define the target timeframes for recovery. RTO (Recovery Tim
 - DNS services provided by BIND9
 
 ### B. Network Restoration Procedure
-1. Restore OPNsense configuration from encrypted backup
-2. Verify WAN connectivity and routing
+1. Restore OPNsense configuration from safely stored and encrypted backup
+2. Verify WAN connectivity and routing (Static and Dynamic Routes)
 3. Re-enable VLAN segmentation and firewall policies
-4. Restore VPN access for administrators
-5. Validate DNS resolution and internal connectivity
+4. Restore VPN access for administrators only before rolling out to other employees
+5. Validate DNS resolution across all confiugred VLANS and internal VLAN connectivity
 
 ### C. Security Controls
 - Firewall rules restored prior to exposing applications
-- Least-privilege access enforced during recovery
-- Network activity monitored via SIEM
+- Least-privilege access enforced during recovery process
+- Network activity closely monitored via SIEM
 
 ## 9. Application Recovery Procedures
+### A. Application Dependencies
+- Active Directory → DNS → Database → Applications
+- Web and file services depend on identity services
+- SIEM depends on restored log pipelines and agent connectivity
+
+### B. Recovery Steps
+1. Rebuild application host VM on proxmox
+2. Restore application binaries and configuration
+3. Restore application data
+4. Validate service startup and access
+5. Monitor logs for errors or anomalies
+6. Verify that everything is in its place as it was before recovery
+7. Verify recovery documentation is up to date after successfuly recovery
 
 ## 10. Testing and Maintenance
+- Quarterly tabletop disaster recovery exercises
+- Annual live recovery simulation
+- Testing includes VM restoration, network recovery, and backup validation
+- Documentation on backup procedures and policy closely studied and updated based on test outcomes
 
 ## 11. Training and Awareness
+- DR roles documented and communicated to staff
+- Annual DR awareness training for IT personnel
+- Train employees on safe storage to avoid personal data loss
+- Role-specific technical training for DR team members
+- New staff onboarded with DR orientation
 
 ## 12. Vendor and Supplier Contingency Plans
+- Critical vendors must maintain documented recovery capabilities
+- Service Level Agreements (SLAs) reviewed annually
+- Backup vendors included in DR testing
+- Alternate suppliers identified for critical hardware and services
 
 ## 13. Financial and Legal Considerations
+ Emergency recovery spending pre-authorized
+- Insurance coverage reviewed annually
+- Compliance requirements include:
+  - NIST SP 800-34 and 800-53
+  - HIPAA (HR data)
+  - GDPR (Sales and BI data)
+- Legal counsel engaged for data breach or regulatory incidents
 
 ## 14. Emergency Response Procedures
+### A. Immediate Actions
+- Ensure personnel safety (Main Priority)
+- Isolate affected systems if required to avoid further escalation
+- Preserve evidence for forensic investigation
+- Notify the DR Team Lead
+
+### B. Incident Types Covered
+- Cyber incidents (ransomware, intrusion)
+- Power failures
+- Hardware failures
+- Natural disasters
 
 ## 15. Incident Reporting and Escalation
+- Incidents reported immediately to the DR Team Lead
+- Escalation based on scope, severity, and data sensitivity
+- SIEM used to support incident timeline reconstruction
+- All actions logged for audit and compliance purposes
 
 ## 16. Communication Plan
+### A. Internal Communication
+- Staff notified via approved internal channels
+- Regular status updates provided during recovery
+
+### B. External Communication
+- Vendors and partners notified as required
+- Compliance and legal notifications handled by leadership
+- Public communications approved prior to release
 
 ## 17. Post-Recovery Evaluation
+- Post-incident review conducted within 10 business days
+- Review includes:
+  - Timeline analysis
+  - RTO/RPO compliance
+  - Communication effectiveness
+  - Technical gaps
+- Lessons learned documented
+- Policies and procedures updated accordingly
+
 
 
 
