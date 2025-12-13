@@ -81,6 +81,24 @@ Recovery Objectives define the target timeframes for recovery. RTO (Recovery Tim
 | Facilities Management  | Building Maintenance  | [Contact Number]      | N/A                             |
 
 ## 5. Data Backup and Restoration Procedures
+### A. Restoration Principles
+- Systems are restored based on criticality tier and priority
+- Restores must meet defined RTO and RPO objectives
+- Data integrity and service functionality must be validated post-restore
+- Only IT_Admins are authorized to initiate restoration activities
+
+### B. Restoration Process
+- Confirm incident scope and affected systems
+- Identify the most recent valid backup meeting RPO
+- Restore system infrastructure (VM, OS, networking)
+- Restore application data and configuration
+- Validate service availability and access
+- Document recovery actions and outcomes
+
+### C. Tier Alignment
+- Tier 1: Replication, transaction logs, and nightly images
+- Tier 2: Snapshots and incremental backups
+- Tier 3: Configuration backups and scheduled images
 
 ## 6. Disaster Recovery Site
 
@@ -202,6 +220,7 @@ Recovery Objectives define the target timeframes for recovery. RTO (Recovery Tim
   - Technical gaps
 - Lessons learned documented
 - Policies and procedures updated accordingly
+
 
 
 
