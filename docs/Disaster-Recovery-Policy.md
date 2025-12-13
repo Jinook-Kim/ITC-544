@@ -101,6 +101,18 @@ Recovery Objectives define the target timeframes for recovery. RTO (Recovery Tim
 - Tier 3: Configuration backups and scheduled images
 
 ## 6. Disaster Recovery Site
+### A. Primary Site
+- On-premises Proxmox virtualization environment hosting all Tier 1-3 systems and core network services
+
+### B. Recovery Capabilities
+- Encrypted offsite cloud object storage
+- Pre-built VM templates for rapid redeployment
+- Remote administrative access via VPN
+- Ability to rebuild services on alternate Proxmox hosts or secondary infrastructure if required
+
+### C. Site Activation
+- Initiated when primary site exceeds RTO thresholds
+- Authorized by the DR Team Lead
 
 ## 7. Hardware and Software Inventory
 | System                  | Role                          | OS/Platform            | Hardware Type          | Replacement Strategy (Source/Method)                                                                                     |
@@ -220,6 +232,7 @@ Recovery Objectives define the target timeframes for recovery. RTO (Recovery Tim
   - Technical gaps
 - Lessons learned documented
 - Policies and procedures updated accordingly
+
 
 
 
