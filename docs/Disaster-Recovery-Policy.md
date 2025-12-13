@@ -103,6 +103,23 @@ Recovery Objectives define the target timeframes for recovery. RTO (Recovery Tim
 | Linux Client (Admin)    | Admin Workstation             | Ubuntu Desktop          | Physical    | VM Template: Restore using standard Ubuntu VM template.                                            
 
 ## 8. Network Infrastructure
+### A. Network Components
+- Router/Firewall: OPNsense
+- Segmented internal network using VLANs
+- VPN access via WireGuard
+- DNS services provided by BIND9
+
+### B. Network Restoration Procedure
+1. Restore OPNsense configuration from encrypted backup
+2. Verify WAN connectivity and routing
+3. Re-enable VLAN segmentation and firewall policies
+4. Restore VPN access for administrators
+5. Validate DNS resolution and internal connectivity
+
+### C. Security Controls
+- Firewall rules restored prior to exposing applications
+- Least-privilege access enforced during recovery
+- Network activity monitored via SIEM
 
 ## 9. Application Recovery Procedures
 
@@ -121,5 +138,6 @@ Recovery Objectives define the target timeframes for recovery. RTO (Recovery Tim
 ## 16. Communication Plan
 
 ## 17. Post-Recovery Evaluation
+
 
 
