@@ -2,14 +2,6 @@
 
 # Final Documentation Packet Index
 
-This README serves as the master index for all documentation required in the Final Documentation Packet.  
-The structure below **follows the exact order of the project requirements**.  
-Missing documents are included as placeholders and must be created.
-
----
-
-# 📘 Core Documentation
-
 ## 1. Introduction
 
 This documentation provides a complete overview of the wiki infrastructure designed and implemented for the enterprise network environment in this project. It details every major system component—including servers, directory services, networking, security controls, and operational procedures—required to deploy, manage, and maintain the environment.
