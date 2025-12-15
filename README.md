@@ -60,7 +60,7 @@ All core documentation, configuration files, and supporting materials are organi
 
 ---
 
-## 8. Active Directory Integration and Configuration
+## 8. Active Directory Configuration and Integration 
 
 | Page                                                         | Description                                                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------------------------ |
@@ -79,7 +79,7 @@ All core documentation, configuration files, and supporting materials are organi
 
 ---
 
-## 10. VPN Access
+## 10. VPN Configuration and Access
 
 | Page                                    | Description                                              |
 | --------------------------------------- | -------------------------------------------------------- |
