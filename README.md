@@ -52,7 +52,7 @@ All core documentation, configuration files, and supporting materials are organi
 
 ---
 
-## 7. File Server
+## 7. File and Web Server
 
 | Page                                             | Description                                                                     |
 | ------------------------------------------------ | ------------------------------------------------------------------------------- |
@@ -60,7 +60,7 @@ All core documentation, configuration files, and supporting materials are organi
 
 ---
 
-## 8. Active Directory Integration
+## 8. Active Directory Integration and Configuration
 
 | Page                                                         | Description                                                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------------------------ |
